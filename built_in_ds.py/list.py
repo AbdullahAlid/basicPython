@@ -1,3 +1,4 @@
+from collections import deque
 letters = ['a', 'b', 'c']
 matrix = [[2, 1], [3, 5]]  # two dimentional list
 zeros = [0]*5
@@ -73,9 +74,30 @@ price = []
 #     price.append(item[1])
 # print(price)
 
-prices = list(map(lambda item: item[1], items))
+prices = list(map(lambda item: item[1], items))  # map
+prices = [item[1] for item in items]  # using list comprehension
 print(prices)
 
 # filter function
-filtered = list(filter(lambda item: item[1] > 8, items))
+# filtered = list(filter(lambda item: item[1] > 8, items))
+filtered = [item for item in items if item[1] > 8]  # using list comprehension
 print(filtered)
+
+# zip function
+list1 = [1, 2, 3]
+list2 = [10, 20, 30, 40]
+print(list(zip("abcd", list1, list2)))
+
+# stack
+# append, pop
+
+# queue
+# from collections import deque
+listing = deque([])
+listing.append(1)
+listing.append(2)
+listing.append(3)
+val = listing.popleft()
+print(val)
+if not listing:
+    print("empty")
