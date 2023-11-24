@@ -37,13 +37,14 @@ print(full_name_using_formatted_string)
 
 
 # some common string method
-print(full_name.upper())
-print(full_name.lower())
-print(full_name.title())
-print(full_name.strip())
-print(full_name.find("ali"))
+print(full_name.upper())  # ABDULLAH ALID
+print(full_name.lower())  # abdullah alid
+print(full_name.title())  # Abdullah Alid
+print(full_name.strip())  # Abdullah alid
+print(full_name.find("ali"))  # 10
+# Abdullah balid, does't change the main string
 print(full_name.replace("ali", "bali"))
-print(full_name)
+print(full_name)  # Abdullah alid
 print("bali" in full_name)
 print("bali" not in full_name)
 

@@ -6,7 +6,7 @@
 # for else
 for number in range(1, 4):
     print("attempt", number*".")
-    if number == 3:
+    if number == 9:
         break
 else:
     print("Attempt 3 times but failed")

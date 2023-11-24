@@ -3,8 +3,8 @@ letters = ['a', 'b', 'c']
 matrix = [[2, 1], [3, 5]]  # two dimentional list
 zeros = [0]*5
 combined = zeros + letters
-print(combined)
-numbers = list(range(20))
+print(combined)  # [0, 0, 0, 0, 0, 'a', 'b', 'c']
+numbers = list(range(5))
 chars = list("hello world")
 print(chars)
 
@@ -17,6 +17,7 @@ print(letter[::-1])  # ['d','c','b','a']
 # unpacking list
 first, second, *last = letter
 print(first, second, last)
+print(type(last))
 f, *s, l = letter
 print(f, s, l)
 

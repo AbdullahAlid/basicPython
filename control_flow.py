@@ -16,7 +16,7 @@ print("done")
 age = 12
 message = "Eligible" if age >= 18 else "not eligible"
 print(message)
-# as ternary operator return value it can be use as expression
+# as ternary operator return value it can be use as expression in formatted string
 validity = f"He is {'Eligible' if age >= 18 else 'not eligible'} to consume alcohol"
 print(validity)
 
